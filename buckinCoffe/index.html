@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f965d16b35.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Buckin Coffee</title>
+</head>
+<body>
+    <div class="container">
+        <header class="desktop-header">
+            <div class="logo">
+                <img src="img/headerLogo.png" alt="Logo">
+            </div>
+            <div class="header-items">
+                <ul>
+                    <li class="home-buton"><a href="#" class="item">Ana Sayfa</a></li>
+                    <li><a href="#" class="item">Hikayemiz</a></li>
+                    <li><a href="#" class="item">Kahvelerimiz</a></li>
+                    <li><a href="#" class="item">Yatırım Modelimiz</a></li>
+                    <li><a href="#" class="item">Mağazalarımız</a></li>
+                    <li><a href="#" class="item">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="mobile-hambar">
+                <a href="#" class="ham-buton" id="menu-btn"><i class="fa-solid fa-bars" style="color: rgb(138, 36, 50);"></i></a>
+            </div>
+        </header>
+        <div class="mobile-header-items" id="mobileToggle">
+            <ul>
+                <li class="home-item"><a href="#" class="mobile-item">Anasayfa</a></li>
+                <li><a href="#" class="mobile-item">Hikayemiz</a></li>
+                <li><a href="#" class="mobile-item">Kahvelerimiz</a></li>
+                <li><a href="#" class="mobile-item">Yatırım Modelimiz</a></li>
+                <li><a href="#" class="mobile-item">Mağazalarımız</a></li>
+                <li><a href="#" class="mobile-item">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="img/banner.png" alt="banner" class="cafe-banner" >
+        </div>
+        <div class="menu">
+            <div class="coffee">
+                <p>Kahveler</p>
+                <img src="img/coffee.webp" alt="Coffee">
+            </div>
+            <div class="snack">
+                <p>Atıştırmalıklar</p>
+                <img src="img/snack.webp" alt="Snacks">
+            </div>
+            <div class="dessert">
+                <p>Tatlılar</p>
+                <img src="img/dessert.webp" alt="Desserts">
+            </div>
+        </div>
+        <div class="konum-div">
+            <div class="content">
+                <div class="city-name">
+                    <p>izmir</p>
+                </div>
+                <div class="buttons">
+                    <div class="see-in-map">
+                        <p>Haritada Göster</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="all-branches">
+                        <p>Tüm Şubeler</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="new-branches">
+                    <h2>Balçova-Kipa / Denizli-Horizon, Beşiktaş-İstanbul mağazaları
+                        çok yakında!</h2>
+                </div>
+            </div>
+            <div class="coffee-video">
+                <video src="img/coffee-video.mp4"  autoplay muted loop></video>
+
+            </div>
+        </div>
+        <div class="invest">
+            <div class="invest-img">
+                <img src="img/buckindeer.svg" alt="Deer">
+            </div>
+            <div class="invest-content-container">
+                <div class="invest-content">
+                    <h2>Buckin’in bir sonraki adımını birlikte atalım!</h2>
+                    <p>Abson Yatırım’ın sektörde 25 yılı aşkın deneyimi ile büyüyen Buckin Coffee’nin Türkiye’nin farklı noktalarındaki yatırımcılarından biri olmak için bizimle iletişime geçin.</p>
+                    <div class="be-invest">
+                        <div class="invest-btn">
+                            <a href="#">Yatırımcı Ol</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+            let btn= document.getElementById('menu-btn');
+            let menu= document.getElementById('mobileToggle');
+
+            btn.addEventListener('click', function(){
+                if(menu.classList.contains('open')){
+                    menu.classList.remove('open');
+                }
+                else{
+                    menu.classList.add('open');
+                }
+            })
+            });
+        
+    </script>
+</body>
+</html>

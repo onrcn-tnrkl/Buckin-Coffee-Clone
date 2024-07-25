@@ -1,0 +1,373 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9EFD6;
+    
+}
+.container{
+    height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.desktop-header{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 81.6px;
+    border-bottom: 2px solid #8A2432;
+}
+.logo img{
+    width:100%;
+    height: 100%;
+
+}
+.header-items{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.header-items ul{
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    
+}
+.header-items ul li{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.item{
+    color:rgb(138, 36, 50);
+}
+.header-items .home-buton{
+    background-color: #F5E8D9;
+}
+.header-items ul li:hover{
+    background-color: #F5E8D9;
+    transition: background-color 0.5s ease;
+}
+
+.mobile-hambar{
+    display:none;
+    align-items: center;
+    justify-self: center;
+    margin-right:30px;
+    font-size: 30px;
+}
+
+.banner{
+    width:100%;
+    margin-bottom:20px;
+    
+}
+.cafe-banner{
+    width:100%;
+    
+}
+.menu div{
+    border-radius: 5px;
+    margin:0px 10px;
+    width: 500px;   
+    text-align: center; 
+    
+}
+
+
+.menu{
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+}
+.menu div img{
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.menu div p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top:10px;
+    margin-bottom: 80px;
+}
+
+.menu div:hover{
+    background-color: #EDD5BB;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.mobile-header-items{
+    position: absolute;
+    z-index: 1;
+    background-color: #8A2432;
+    width: 100%; 
+    overflow: hidden; 
+    max-height: 0;
+    transition:max-height 0.5s ease-out;
+    margin-bottom: 20px;
+}
+.mobile-header-items.open{
+    max-height: 500px;
+}
+.mobile-header-items li{
+    margin:0;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.mobile-header-items li:hover{
+    background-color: #F9EFD6;
+}
+.mobile-header-items li:hover a{
+    color: #8A2432;
+}
+.home-item{
+    background-color:#F9EFD6;
+}
+
+.mobile-item{
+    text-transform: uppercase;
+    color:#F9EFD6;
+    font-weight: 500;
+    padding:30px;
+    line-height: 25px;
+}
+.home-item .mobile-item{
+    color: #8A2432;
+}
+
+.konum-div{
+    position: relative;
+    margin: 20px;
+    background: black;
+    overflow: hidden;
+    border-radius: 10px;  
+    width: inherit;
+    height: 100%;  
+}
+
+
+.coffee-video video{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+.content{
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    overflow: hidden;
+    margin:100px 50px
+}
+
+.city-name p{
+    color:#F9EFD6;
+    text-transform: uppercase;
+}
+.buttons{
+    margin:10px 0px;
+    display: flex;
+    
+}
+
+.buttons div{
+    background-color: #F9EFD6;
+    margin-right:20px;
+    width:25%;
+    height:40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.buttons div:hover{
+    background-color: #8A2432;
+}
+
+.buttons div:hover p {
+    color: #FFFFFF;
+}
+.buttons div:hover i{
+    color:#FFFFFF;
+}
+
+
+.buttons .all-branches{
+    background-color: #FFFFFF;
+}
+
+.new-branches{
+    color:#FFFFFF;
+    font-size:40px;
+    font-weight: bold;
+}
+
+
+.invest{
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    margin: 30px 20px;   
+
+}
+.invest-img{
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    margin-left: 300px;
+    
+}
+.invest-content-container{
+    width:70%;
+    display: flex;
+    align-items: center;
+    margin-right:241px
+
+}
+.invest-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.invest-content-container .invest-content h2{
+    font-size:40px;
+    font-weight: 700;
+    line-height: 40px;
+    color:#8A2432;
+    margin-bottom: 30px;
+}
+
+.invest-content p{
+    color:#8A2432;
+    font-size: 17px;
+    font-family: 'Open Sans', 'Montserrat';
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 40px;
+}
+
+.be-invest{
+    background-color: #8A2432;
+    width: 210px;;
+    border-radius: 2px;
+    border:1px solid #8A2432;
+    height: 40px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.invest-btn{
+    font-family: 'Open Sans','Montserrat';
+    background-color: #F9EFD6;
+    height: 100%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    color:#8A2432;
+    align-items: center;
+    cursor: pointer;
+}
+.invest-btn a{
+    color:#8A2432
+}
+.invest-btn:hover {
+    background-color: #8A2432;
+    color:#F9EFD6;
+    transition: background-color 0.5s ease;
+
+}
+.invest-btn:hover a{
+    color:#F9EFD6
+}
+
+
+@media(min-width:1441px){
+    .desktop-header{
+        height: 102px;
+    }
+    .konum-div{
+        height: 700px;
+    }
+    
+}
+
+
+@media (min-width:1041px){
+    .mobile-header-items{
+        max-height: 0px;
+    }
+}
+
+@media (max-width:1040px){
+    .header-items{
+        display: none;
+    }
+    .mobile-hambar{
+        display: flex;
+    }
+    
+}
+
+@media(max-width:768px){
+    .menu{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .konum-div{
+        height: 400px;
+    }
+    .content{
+        margin: 30px;;
+       
+    }
+    .new-branches {
+        font-size: 20px;
+    }
+
+    .invest{
+        flex-wrap: wrap;
+    }
+    .invest-img{
+        width: 100%;
+        align-items: center;
+        margin: 0 0 20px 0;
+        
+        
+    }
+    .invest-content-container{
+        width: 100%;
+        margin:0
+    }
+
+    
+    
+    
+    
+}
+
